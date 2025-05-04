@@ -71,6 +71,8 @@ Und Sonar für das Backend läuft nun einwandfrei:
 
 ![command](assets/Picture18.png)
 
+#### Frontend:
+
 Die gleichen Schritte in Sonar und VS Code werden nun fürs Frontend wiederholt.
 
 Wir bekommen wieder einen Key, um das Sonar mit dem Frontend-Code zu verbinden und tragen dies im VSCode ein:
@@ -100,11 +102,42 @@ Changes Dabei wurde lediglich das DemoAppTest ergänzt und nun ist die Coverage 
 
 ![command](assets/Picture25.png)
 
+![command](assets/Picture27.png)
 
+Wie in der Abbildung zu beginn dieses Kapitels, waren ebenfalls 32 Maintainability Issues im Report. Nach dem Fix wurden rund 26 gezählt.
 
+![command](assets/Picture26.png)
 
 ### Backend: Issue finden, beheben und Report-Änderung dokumentiert (Commits, neuer Report)
+Hier wurden nun SeleniumTests erstellt für das DevOpsDemo.
+Insgesamt wurden drei Tests erstellt:
+- Login DevOpsDemo: Testet das Login und stellt anhand eines Elements fest, ob der Zugriff geklappt hat (Siehe erster Screenshot). Ablauf:
+    - Öffnen der Seite
+    - Anpassen der Fenstergrösse
+    - Click auf das usernameField und eingabe des Usernames "Selenium"
+    - Click auf das passwordField und eingabe des Usernames "Selenium"
+    - Click auf den signinButton
+    - Prüfen anhand eines Elements, ob das LogIn successful war
+- Add NewBoard: Hier wird ein neues Board hinzugefügt und geschaut, ob man sich im Anschluss in diesem Board befindet (Siehe zweiter Screenshot). Ablauf:
+    - Öffnen der Seite
+    - Anpassen der Fenstergrösse
+    - Click auf den Button AddField
+    - Click in das Feld newBoardTitle
+    - Hinzufpgen des Namens "Test"
+    - auf Erstellen drücken.
+    - Anhand eines Elements schauen, ob man auf das neu erstellte Board weitergeleitet wurde
+- Und danach wird getestet, ob das LogOut funktioniert (Siehe dritter Screenshot). Ablauf:
+    - Öffnen der Seite
+    - Anpassen der Fenstergrösse
+    - Clicken auf das profileIcon
+    - Clicken auf "LogOut"
+    - Anhand eines Elements schauen, ob man auf der LogInSeite ist
 
+![command](assets/Picture28.png)
 
-• Selenium *.side-Test für beliebige Webseite erstellt, Ausführung dokumentiert, *.side auf GitHub abgelegt
-• Screencasts mittels Selenium Grid erstellt, dokumentiert, auf GitHub abgelegt
+![command](assets/Picture29.png)
+
+![command](assets/Picture30.png)
+
+In der Test Suite wurden die Testfälle so angelegt, dass eine Ausführung aller Tests auf einmal möglich sind und somit dies ohne grossen Aufwand gemacht werden kann.
+
