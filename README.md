@@ -88,7 +88,15 @@ Nach der 4 Minütigen Execution ist dann Sonar bereit beide FrontEnd und Backend
 ![command](assets/Picture22.png)
 
 ### Backend: Code/Test-Änderung vornehmen und Report-Änderung dokumentieren (Commits, neuer Report, Code Coverage)
+Nun werden gewisse Teile des DevOpsDemo-Backend gemacht, damit Sonar bessere Zahlen liefert:
 
+![command](assets/Picture23.png)
+
+Einerseits sollte die Test coverage erhöht werden. Zurzeit ist diese bei 0%
+
+![command](assets/Picture24.png)
+
+Changes wurden
 
 
 ### Backend: Issue finden, beheben und Report-Änderung dokumentiert (Commits, neuer Report)
