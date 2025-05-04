@@ -141,3 +141,12 @@ Insgesamt wurden drei Tests erstellt:
 
 In der Test Suite wurden die Testfälle so angelegt, dass eine Ausführung aller Tests auf einmal möglich sind und somit dies ohne grossen Aufwand gemacht werden kann.
 
+Für SeleniumGrid wurde nun das DockerFile so angepasst, dass das DevOpsDemo von Woche 4 gestartet werden kann und die gleichen Tests ausgeführt werden wie oben:
+
+![command](assets/Picture31.png)
+
+![command](assets/Picture33.png)
+
+Das Selenium Grid zeigt momentan folgendes:
+
+![command](assets/Picture32.png)

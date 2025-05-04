@@ -1,9 +1,31 @@
+version: '3'
+
 services:
-  devopsdemo:
-    image: mosazhaw/devopsdemo
-    container_name: devopsdemo
+  wekandb:
+    image: mongo:6
+    container_name: wekan-db
+    restart: always
+    command: mongod --oplogSize 128
+    networks:
+      - wekan-network
+    volumes:
+      - wekan-db:/data/db
+      - wekan-db-dump:/dump
+
+  wekan:
+    image: wekanteam/wekan:latest
+    restart: always
+    networks:
+      - wekan-network
     ports:
       - "8088:8080"
+    environment:
+      - MONGO_URL=mongodb://wekandb:27017/wekan
+      - WITH_API=true
+      - ROOT_URL=http://localhost:8088
+      - BROWSER_POLICY_ENABLED=true
+    depends_on:
+      - wekandb
 
   chrome:
     image: selenium/node-chrome:4.26.0-20241101
@@ -54,3 +76,11 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+
+networks:
+  wekan-network:
+    driver: bridge
+
+volumes:
+  wekan-db:
+  wekan-db-dump:

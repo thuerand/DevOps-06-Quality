@@ -1,5 +1,9 @@
 capabilities:
   browserName: chrome
   se:name: "chrome"
-baseUrl: "http://host.docker.internal:3000"
-server: "http://localhost:4444/"
+  goog:chromeOptions:
+    args: ["--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu"]
+    w3c: true
+baseUrl: "http://host.docker.internal:8088"
+server: "http://localhost:4444/wd/hub"
+timeout: 60000

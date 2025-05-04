@@ -1,5 +1,5 @@
 capabilities:
-  browserName: firefox
-  se:name: "firefox"
-baseUrl: "http://host.docker.internal:3000"
+  browserName: chrome
+  se:name: "chrome"
+baseUrl: "http://localhost:8088"
 server: "http://localhost:4444/"
