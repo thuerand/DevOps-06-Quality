@@ -88,6 +88,8 @@ Nach der 4 Minütigen Execution ist dann Sonar bereit beide FrontEnd und Backend
 ![command](assets\picture22.png)
 
 ### Backend: Code/Test-Änderung vornehmen und Report-Änderung dokumentieren (Commits, neuer Report, Code Coverage)
+Um einen Effekt bei der Erstellung von Tests zu sehen, werden unbenutze .javas gelöscht.
+
 
 ### Backend: Issue finden, beheben und Report-Änderung dokumentiert (Commits, neuer Report)
 
