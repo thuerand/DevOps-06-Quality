@@ -96,7 +96,11 @@ Einerseits sollte die Test coverage erhöht werden. Zurzeit ist diese bei 0%
 
 ![command](assets/Picture24.png)
 
-Changes wurden
+Changes Dabei wurde lediglich das DemoAppTest ergänzt und nun ist die Coverage auf 87.7%:
+
+![command](assets/Picture25.png)
+
+
 
 
 ### Backend: Issue finden, beheben und Report-Änderung dokumentiert (Commits, neuer Report)

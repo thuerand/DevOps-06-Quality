@@ -30,7 +30,6 @@ public class ProjectController {
         this.projects.put(3, new Project(3, "Kubernetes", "Einführung von Kubernetes für Container-Orchestrierung", "Geplant", "2025-07-01"));
         this.projects.put(4, new Project(4, "Monitoring", "Implementierung von Monitoring-Tools", "In Bearbeitung", "2025-05-15"));
         this.projects.put(5, new Project(5, "Security Audit", "Sicherheitsüberprüfung der Infrastruktur", "Abgeschlossen", "2025-04-10"));
-        System.out.println("Init Project Data");
     }
 
     @GetMapping("/services/project")
