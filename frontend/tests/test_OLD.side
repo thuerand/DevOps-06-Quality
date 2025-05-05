@@ -1,0 +1,237 @@
+{
+  "id": "3ed9f57b-0f7f-48fa-a243-e7c86fd54d7c",
+  "version": "2.0",
+  "name": "Selenium DevOpsDemo",
+  "url": "http://wekan:8080/",
+  "tests": [{
+    "id": "edeb78b8-640a-4828-bfcc-7616f3d233cf",
+    "name": "Login DevOpsDemo",
+    "commands": [{
+      "id": "91a2e620-8d7f-4123-843f-18eaa5dfe024",
+      "comment": "",
+      "command": "open",
+      "target": "http://wekan:8080/sign-in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19d914bf-088a-4580-9924-49321739413e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91aa13ef-3cf0-4e7b-a58e-fdc68415fa4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=at-field-username_and_email",
+      "targets": [
+        ["id=at-field-username_and_email", "id"],
+        ["name=at-field-username_and_email", "name"],
+        ["css=#at-field-username_and_email", "css:finder"],
+        ["xpath=//input[@id='at-field-username_and_email']", "xpath:attributes"],
+        ["xpath=//form[@id='at-pwd-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f32877-17d3-4622-8ff4-45f605907c45",
+      "comment": "",
+      "command": "type",
+      "target": "id=at-field-username_and_email",
+      "targets": [
+        ["id=at-field-username_and_email", "id"],
+        ["name=at-field-username_and_email", "name"],
+        ["css=#at-field-username_and_email", "css:finder"],
+        ["xpath=//input[@id='at-field-username_and_email']", "xpath:attributes"],
+        ["xpath=//form[@id='at-pwd-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Selenium"
+    }, {
+      "id": "16ce73cf-cdd7-49ab-a037-6fbd74f54e8e",
+      "comment": "",
+      "command": "type",
+      "target": "id=at-field-password",
+      "targets": [
+        ["id=at-field-password", "id"],
+        ["name=at-field-password", "name"],
+        ["css=#at-field-password", "css:finder"],
+        ["xpath=//input[@id='at-field-password']", "xpath:attributes"],
+        ["xpath=//form[@id='at-pwd-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Selenium"
+    }, {
+      "id": "329ff202-9cdc-4885-bf16-66a172019068",
+      "comment": "",
+      "command": "click",
+      "target": "id=at-btn",
+      "targets": [
+        ["id=at-btn", "id"],
+        ["css=#at-btn", "css:finder"],
+        ["xpath=//button[@id='at-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='at-pwd-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ffc5bbf-b56c-4c57-9e2c-6493e48fdb68",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Add Board",
+      "targets": [
+        ["linkText=Add Board", "linkText"],
+        ["css=.board-list-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Board')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Board')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1a1ef6b1-8c55-457a-b6be-f8df941b8cab",
+    "name": "Add NewBoard",
+    "commands": [{
+      "id": "311ef495-6e5f-4563-80f3-1ba0d1bf50cd",
+      "comment": "",
+      "command": "open",
+      "target": "http://wekan:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59b9535a-1cd5-4994-95a3-954aa48238a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38b326dd-5d57-4ac7-a533-a8ad5d9fc3e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Board",
+      "targets": [
+        ["linkText=Add Board", "linkText"],
+        ["css=.board-list-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Board')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Board')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3af42b-415a-42c1-97d4-2fe68b666291",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-new-board-title",
+      "targets": [
+        ["css=.js-new-board-title", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8285ee17-6b38-4d57-ad00-47108987adb1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.js-new-board-title",
+      "targets": [
+        ["css=.js-new-board-title", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "1b82f67e-e8e4-44cd-9578-f9329985c84a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.primary",
+      "targets": [
+        ["css=.primary", "css:finder"],
+        ["xpath=//input[@value='Create']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e675b7-7016-47c9-ba7b-ffe1b93fdffd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.list-name-input",
+      "targets": [
+        ["css=.list-name-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ae8077dc-f5c6-40db-a1ba-007d4b2212f7",
+    "name": "3_LogOut",
+    "commands": [{
+      "id": "222909e5-4dc2-4f9c-a744-947813b72b45",
+      "comment": "",
+      "command": "open",
+      "target": "http://wekan:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66d56d62-49c0-4b30-bba0-5c28c8a97bb0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57e94949-e17c-4a1b-b351-60197d7373cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-user-bar-name",
+      "targets": [
+        ["css=.header-user-bar-name", "css:finder"],
+        ["xpath=//div[@id='header-user-bar']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e473fc-a626-483d-a525-14bcf359a099",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.js-logout", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "435a00ca-ad10-4075-8a72-aca559ace16a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=img:nth-child(2)",
+      "targets": [
+        ["css=img:nth-child(2)", "css:finder"],
+        ["xpath=//section/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fdffd222-6f1e-4117-ac24-c937d0d56dae",
+    "name": "AutoTest",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["edeb78b8-640a-4828-bfcc-7616f3d233cf", "1a1ef6b1-8c55-457a-b6be-f8df941b8cab", "ae8077dc-f5c6-40db-a1ba-007d4b2212f7"]
+  }],
+  "urls": ["http://wekan:8080/"],
+  "plugins": []
+}

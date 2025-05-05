@@ -147,6 +147,34 @@ Für SeleniumGrid wurde nun das DockerFile so angepasst, dass das DevOpsDemo von
 
 ![command](assets/Picture33.png)
 
+Als weitere Probleme auftraten, mussten leider diverse Dinge angepasst werden:
+
+![command](assets/Picture38.png)
+
+Ebenfalls wurde nach einer Weile erkannt, dass Selenium nicht auf localhost von Wekan zugreifen konnte, somit wurde eine ROOT_URI erstellt, damit der Zugriff direkt geschehen kann..
+
+![command](assets/Picture39.png)
+
 Das Selenium Grid zeigt momentan folgendes:
 
 ![command](assets/Picture32.png)
+
+Bei der Ausführung gab es aber Probleme:
+
+![command](assets/Picture34.png)
+
+Grund dafür ist, dass Selenium sich beim UI immer einloggen muss und deswegen ein anderer Starting Screen hat.
+
+Nun werden die Schritte hinzugefügt damit dies auch via Grid funktioniert:
+
+![command](assets/Picture36.png)
+
+Und nun sind die Testcases successful:
+
+Chrome:
+
+![command](assets/Picture35.png)
+
+Firefox:
+
+![command](assets/Picture37.png)
